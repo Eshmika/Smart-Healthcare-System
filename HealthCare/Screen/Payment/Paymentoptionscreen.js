@@ -12,19 +12,19 @@ const SelectTransferType = ({ navigation }) => {
   const handleCardPayment = () => {
     // Navigate to the card payment page
     Alert.alert("Redirecting to Card Payment");
-    navigation.navigate('CardPayment'); // Navigate to CardPayment screen
+    navigation.navigate('Card Payment'); // Navigate to CardPayment screen
   };
 
-  const handleCashPayment = () => {
-    // Navigate to cash payment or confirmation page
-    Alert.alert("Redirecting to Cash Payment Confirmation");
-    navigation.navigate('CashPayment'); // Navigate to CashPayment screen (you can define it separately)
-  };
+  // const handleCashPayment = () => {
+  //   // Navigate to cash payment or confirmation page
+  //   Alert.alert("Redirecting to Cash Payment Confirmation");
+  //   navigation.navigate('CashPayment'); // Navigate to CashPayment screen (you can define it separately)
+  // };
 
   const handleClaimInsurance = () => {
     // Navigate to insurance claim page
     Alert.alert("Redirecting to Claim Insurance");
-    navigation.navigate('InsuranceClaim'); // Navigate to InsuranceClaim screen
+    navigation.navigate('Insurance Claim'); // Navigate to InsuranceClaim screen
   };
 
   return (

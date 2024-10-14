@@ -99,7 +99,7 @@ const AppointmentHomeScreen = ({ navigation }) => {
                       <TouchableOpacity
                         style={styles.bookButton}
                         onPress={() =>
-                          navigation.navigate("DoctorDetailsScreen", {
+                          navigation.navigate("Book Appointment", {
                             advisorId: advisor.id,
                           })
                         }

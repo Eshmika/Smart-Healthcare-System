@@ -14,6 +14,7 @@ import CardPayment from './Screen/Payment/CardPayment';
 import PaymentListScreen from './Screen/Payment/PaymentList';
 import SelectTransferType from './Screen/Payment/TransferType';
 import PaymentOptionScreen from './Screen/Payment/Paymentoptionscreen';
+import InsuranceSreen from './Screen/Payment/InsuranceScreen';
 import { ToastProvider } from 'react-native-toast-notifications';
 
 const Stack = createNativeStackNavigator();
@@ -33,7 +34,8 @@ export default function App() {
           <Stack.Screen name="Card Payment" component={CardPayment} />
           <Stack.Screen name="Payment List" component={PaymentListScreen} />
           <Stack.Screen name="Select Transfer Type" component={SelectTransferType} />
-          <Stack.Screen name="Payment Option Screen" component={PaymentOptionScreen} />                   
+          <Stack.Screen name="Payment Option Screen" component={PaymentOptionScreen} />  
+          <Stack.Screen name="Insurance Claim" component={InsuranceSreen} />                 
 
         </Stack.Navigator>
       </NavigationContainer>    

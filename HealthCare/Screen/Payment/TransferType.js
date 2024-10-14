@@ -11,14 +11,14 @@ if (!firebase.apps.length) {
 const SelectTransferType = ({ navigation }) => {
   const handlePayNow = () => {
     // Navigate to the card payment page
-    Alert.alert("Redirecting to Card Payment");
+    Alert.alert("Redirecting to Payment");
     navigation.navigate('Payment Option Screen'); // Navigate to CardPayment screen
   };
 
   const handleClaimInsurance = () => {
     // Navigate to insurance claim page
     Alert.alert("Redirecting to Claim Insurance");
-    navigation.navigate('InsuranceClaim'); // Navigate to InsuranceClaim screen
+    navigation.navigate('Insurance Claim'); // Navigate to InsuranceClaim screen
   };
 
   return (
