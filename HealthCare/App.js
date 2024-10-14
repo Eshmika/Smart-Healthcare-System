@@ -12,6 +12,7 @@ import SignUpScreen from './screen/SignUpScreen';
 import Home from './Screen/HomeScreen';
 import CardPayment from './Screen/Payment/CardPayment';
 import PaymentListScreen from './Screen/Payment/PaymentList';
+import Transfer
 import { ToastProvider } from 'react-native-toast-notifications';
 
 const Stack = createNativeStackNavigator();
