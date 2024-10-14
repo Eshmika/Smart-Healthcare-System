@@ -9,10 +9,16 @@ if (!firebase.apps.length) {
 }
 
 const SelectTransferType = ({ navigation }) => {
-  const handlePayNow = () => {
+  const handleCardPayment = () => {
     // Navigate to the card payment page
     Alert.alert("Redirecting to Card Payment");
-    navigation.navigate('Payment Option Screen'); // Navigate to CardPayment screen
+    navigation.navigate('CardPayment'); // Navigate to CardPayment screen
+  };
+
+  const handleCashPayment = () => {
+    // Navigate to cash payment or confirmation page
+    Alert.alert("Redirecting to Cash Payment Confirmation");
+    navigation.navigate('CashPayment'); // Navigate to CashPayment screen (you can define it separately)
   };
 
   const handleClaimInsurance = () => {
@@ -25,13 +31,23 @@ const SelectTransferType = ({ navigation }) => {
     <View style={styles.container}>
       <Text style={styles.title}>Select Transfer Type</Text>
 
-      <TouchableOpacity style={styles.option} onPress={handlePayNow}>
-        <Text style={styles.optionTitle}>Pay Now</Text>
+      <TouchableOpacity style={styles.option} onPress={handleCardPayment}>
+        <Text style={styles.optionTitle}>Card Payment</Text>
         <Text style={styles.optionDescription}>
-          Pay immediately using your credit or debit card for instant confirmation.
+          Pay using your credit or debit card for instant confirmation.
         </Text>
         <Text style={styles.smallDescription}>
           Confirm your appointment and process your payment securely.
+        </Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.option} onPress={handleCashPayment}>
+        <Text style={styles.optionTitle}>Cash Payment</Text>
+        <Text style={styles.optionDescription}>
+          Pay with cash upon arrival.
+        </Text>
+        <Text style={styles.smallDescription}>
+          Ensure you have the correct amount to avoid delays.
         </Text>
       </TouchableOpacity>
 
